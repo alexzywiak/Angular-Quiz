@@ -1,0 +1,11 @@
+<div class="col-sm-12">
+    <h1><strong>Real knowledge is to know the extent of your ignorance.</strong><br><small>- Confucious</small></h1>
+    <h2><em>Let these quizzes help you with that...</em></h2>
+    <hr>
+    <div ng-repeat="quiz in quizList" class="btn-group btn-group-justified">
+      <div class="btn-group">
+        <button ng-click="startQuiz('{{quiz}}')" class="btn btn-primary"><h3>{{ quiz }}</h3></button>
+      </div>
+    </div>
+
+</div>

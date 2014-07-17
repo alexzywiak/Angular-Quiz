@@ -1,0 +1,19 @@
+<div class="col-sm-12">
+    
+    <h1 class="text-center">{{ question }}</h1>
+    <h5>Question {{ count }} of {{ quizLength }}</h5>
+    
+    <hr>
+
+    <div ng-show="showAlert" class="alert alert-success" role="alert">
+      <button ng-click="nextQuestion()" class="btn btn-primary">Next</button>
+      <span>{{ alertMessage }}</span>
+    </div>
+
+    <div ng-repeat="choice in choices" class="btn-group btn-group-justified">
+      <div class="btn-group">
+        <button ng-click="answerQuestion('{{ choice }}')" type="button" class="btn btn-default">{{ choice }}</button>
+      </div>
+    </div>
+
+</div>
